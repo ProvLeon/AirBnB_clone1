@@ -1,16 +1,7 @@
-.places {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
+/* PLACES */
 .places h1 {
     text-align: left;
     font-size: 30px;
-    display: block;
-    flex-grow: 2;
-    width: 100%;
-    margin-left: 1em;
 }
 
 .places article {
@@ -19,10 +10,21 @@
     margin: 20px;
     border: 1px solid #FF5A5F;
     border-radius: 4px;
+
+    /* center contents */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .places article h2 {
     font-size: 30px;
-    text-align: center;
-    margin-top: 0.175em;
+    margin: 0;
+}
+
+.places__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
